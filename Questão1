@@ -1,0 +1,26 @@
+/*Faça um programa que peça uma nota, entre zero e dez.
+Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido.
+depois mostre se o aluno foi aprovado ou não,0 a 5 (não foi aprovado ) e 5 a 10 (aprovado)*/
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cin>>n;
+    while(n<0){
+        cout<<"numero inalido, tente novamente";
+        cin>>n;
+    }
+   if(n>=5){         
+       cout<<"você foi aprovado";
+      
+   }
+   else{
+       cout<<"você não foi aprovado";
+   }
+    return 0;
+}
